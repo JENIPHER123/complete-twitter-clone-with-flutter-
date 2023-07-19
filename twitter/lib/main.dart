@@ -27,6 +27,7 @@ import 'package:twitter/widgets/side_nav.dart';
 
 void main() {
   runApp( MaterialApp(
+    debugShowCheckedModeBanner: false,
     routes:{
       '/':(context) => const Landing(),
       'login':(context) => const Login(),
