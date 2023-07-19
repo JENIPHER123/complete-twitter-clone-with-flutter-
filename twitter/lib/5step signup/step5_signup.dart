@@ -10,6 +10,10 @@ class Step5Signup extends StatefulWidget {
 class _Step5SignupState extends State<Step5Signup> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text('step5 signup page'),),);
+    return const Scaffold(
+      body: Center(
+        child: Text('step5 signup page'),
+      ),
+    );
   }
 }
