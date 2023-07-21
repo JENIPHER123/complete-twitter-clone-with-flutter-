@@ -119,10 +119,13 @@ class _LandingState extends State<Landing> {
                     ),
                     onPressed: _handleSignIn,
                     child: const Padding(
-                      padding: EdgeInsets.all(28.0),
+                      padding: EdgeInsets.all(20.0),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          Image(
+                              image: AssetImage('assets/icons/apple1.png'),
+                              width: 50),
                           Text(
                             'Sign Up with Apple',
                             style: TextStyle(
