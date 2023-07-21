@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class Landing extends StatefulWidget {
   const Landing({super.key});
@@ -8,6 +9,10 @@ class Landing extends StatefulWidget {
 }
 
 class _LandingState extends State<Landing> {
+  /* creating the google sign in instance */
+  GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
+
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
