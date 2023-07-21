@@ -12,51 +12,65 @@ class _LandingState extends State<Landing> {
   /* creating the google sign in instance */
   GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
 
+  /* defining the button to handle the button tap and initiate sign in */
+  Future<void> _handleSignIn() async {
+    try {
+      await _googleSignIn.signIn();
+      // Add your logic to handle the successful sign-in here.
+    } catch (error) {
+      print('Error during sign in: $error');
+      // Add your error handling logic here if necessary.
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding: EdgeInsets.all(28.0),
+            padding: const EdgeInsets.all(28.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 /* twitter logo */
-                Image(
+                const Image(
                   image: AssetImage('assets/logo/logo1.png'),
                   width: 200,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
-                Text(
+                const Text(
                   'Happening',
                   style: TextStyle(
                     fontSize: 60,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   'now',
                   style: TextStyle(
                     fontSize: 60,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
-                Text(
+                const Text(
                   'Join Twitter today.',
                   style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
                   ),
+                ),
+                ElevatedButton(
+                  onPressed: _handleSignIn,
+                  child: const Text('Sign in with Gmail'),
                 )
               ],
             ),
