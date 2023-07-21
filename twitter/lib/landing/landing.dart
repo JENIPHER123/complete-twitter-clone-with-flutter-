@@ -43,13 +43,13 @@ class _LandingState extends State<Landing> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                 SizedBox(
-                  height: 10,
+                SizedBox(
+                  height: 50,
                 ),
                 Text(
-                  'now',
+                  'Join Twitter today.',
                   style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 40,
                     fontWeight: FontWeight.bold,
                   ),
                 )
