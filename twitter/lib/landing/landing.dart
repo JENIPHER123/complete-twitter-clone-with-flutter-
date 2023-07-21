@@ -11,8 +11,52 @@ class _LandingState extends State<Landing> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text('landing page'),
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.all(28.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                /* twitter logo */
+                Image(
+                  image: AssetImage('assets/logo/logo1.png'),
+                  width: 200,
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                Text(
+                  'Happening',
+                  style: TextStyle(
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  'now',
+                  style: TextStyle(
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                 SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  'now',
+                  style: TextStyle(
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
