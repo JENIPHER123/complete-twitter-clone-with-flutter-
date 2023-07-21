@@ -68,10 +68,108 @@ class _LandingState extends State<Landing> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: _handleSignIn,
-                  child: const Text('Sign in with Gmail'),
-                )
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 239, 241, 243),
+                      side: const BorderSide(
+                          color: Color.fromARGB(255, 135, 177, 211)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(48.0), // Adding border radius
+                      ),
+                    ),
+                    onPressed: _handleSignIn,
+                    child: const Padding(
+                      padding: EdgeInsets.all(28.0),
+                      child: Row(
+                        children: [
+                          Text(
+                            'Sign in with Gmail',
+                            style: TextStyle(color: Colors.black38),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 239, 241, 243),
+                      side: const BorderSide(
+                          color: Color.fromARGB(255, 135, 177, 211)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(48.0), // Adding border radius
+                      ),
+                    ),
+                    onPressed: _handleSignIn,
+                    child: const Padding(
+                      padding: EdgeInsets.all(28.0),
+                      child: Row(
+                        children: [
+                          Text(
+                            'Sign in with Gmail',
+                            style: TextStyle(color: Colors.black38),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      'or',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 239, 241, 243),
+                      side: const BorderSide(
+                          color: Color.fromARGB(255, 135, 177, 211)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(48.0), // Adding border radius
+                      ),
+                    ),
+                    onPressed: _handleSignIn,
+                    child: const Padding(
+                      padding: EdgeInsets.all(28.0),
+                      child: Row(
+                        children: [
+                          Text(
+                            'Sign in with Gmail',
+                            style: TextStyle(color: Colors.black38),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
