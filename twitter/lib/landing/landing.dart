@@ -34,9 +34,12 @@ class _LandingState extends State<Landing> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 /* twitter logo */
-                const Image(
-                  image: AssetImage('assets/logo/logo1.png'),
-                  width: 200,
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                  child: Image(
+                    image: AssetImage('assets/logo/logo1.png'),
+                    width: 150,
+                  ),
                 ),
                 const SizedBox(
                   height: 40,
@@ -118,10 +121,13 @@ class _LandingState extends State<Landing> {
                     child: const Padding(
                       padding: EdgeInsets.all(28.0),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
-                            'Sign in with Gmail',
-                            style: TextStyle(color: Colors.black38),
+                            'Sign Up with Apple',
+                            style: TextStyle(
+                                fontSize: 20,
+                                color: Color.fromARGB(255, 53, 53, 53)),
                           ),
                         ],
                       ),
@@ -148,6 +154,99 @@ class _LandingState extends State<Landing> {
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                      side: const BorderSide(
+                          color: Color.fromARGB(255, 135, 177, 211)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(48.0), // Adding border radius
+                      ),
+                    ),
+                    onPressed: _handleSignIn,
+                    child: const Padding(
+                      padding: EdgeInsets.all(28.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            'Create account',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 20,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(20, 30, 0, 0),
+                  child: Row(
+                    children: [
+                      Text(
+                        'By signing up, you agree to the ',
+                        style:
+                            TextStyle(color: Color.fromARGB(255, 58, 57, 57)),
+                      ),
+                      Text(
+                        'Terms of Service ',
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                      Text(
+                        'and ',
+                        style:
+                            TextStyle(color: Color.fromARGB(255, 58, 57, 57)),
+                      ),
+                      Text(
+                        'Privacy',
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                    ],
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(20, 5, 0, 0),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Policy',
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                      Text(
+                        ' ,including',
+                        style:
+                            TextStyle(color: Color.fromARGB(255, 58, 57, 57)),
+                      ),
+                      Text(
+                        ' Cookie Use',
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  height: 70,
+                ),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+                  child: Text(
+                    'Already have an account?',
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
                       backgroundColor: const Color.fromARGB(255, 239, 241, 243),
                       side: const BorderSide(
                           color: Color.fromARGB(255, 135, 177, 211)),
@@ -160,10 +259,14 @@ class _LandingState extends State<Landing> {
                     child: const Padding(
                       padding: EdgeInsets.all(28.0),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
-                            'Sign in with Gmail',
-                            style: TextStyle(color: Colors.black38),
+                            'Sign In',
+                            style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.blue,
+                                fontWeight: FontWeight.bold),
                           ),
                         ],
                       ),
