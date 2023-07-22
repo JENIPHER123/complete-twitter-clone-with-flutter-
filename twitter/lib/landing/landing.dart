@@ -98,35 +98,35 @@ class _LandingState extends State<Landing> {
                               CircleAvatar(
                                 backgroundImage:
                                     AssetImage('assets/images/place1.jpg'),
-                                backgroundColor: Color.fromARGB(255, 102, 56, 56),
+                                backgroundColor:
+                                    Color.fromARGB(255, 102, 56, 56),
                                 radius: 20,
                               ),
-                               Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Sign in As Jenipher',
-                                style: TextStyle(
-                                    color: Color.fromARGB(255, 53, 52, 52)),
-                              ),
-                              Row(
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'jeniperkuki@gmail.com',
-                                    style: TextStyle(color: Colors.black38),
+                                    'Sign in As Jenipher',
+                                    style: TextStyle(
+                                        color: Color.fromARGB(255, 53, 52, 52)),
                                   ),
-                                  Icon(
-                                    Icons.keyboard_arrow_down,
-                                    color: Color.fromARGB(218, 27, 27, 27),
-                                  )
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'jeniperkuki@gmail.com',
+                                        style: TextStyle(color: Colors.black38),
+                                      ),
+                                      Icon(
+                                        Icons.keyboard_arrow_down,
+                                        color: Color.fromARGB(218, 27, 27, 27),
+                                      )
+                                    ],
+                                  ),
                                 ],
                               ),
                             ],
                           ),
-                            ],
-                          ),
                           SizedBox(width: 15),
-                         
                           CircleAvatar(
                             backgroundImage:
                                 AssetImage('assets/images/place1.jpg'),
@@ -312,6 +312,147 @@ class _LandingState extends State<Landing> {
                       ),
                     ),
                   ),
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                const Image(
+                  image: AssetImage('assets/images/landing-main.PNG'),
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      'About',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Help Center',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Terms of Service',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Privacy Policy',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      'Cookie Policy',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Accessibility',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Ads Info',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Blogs',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Status',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      'Careers',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Brand Resources',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Advertising',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Marketing',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      'Twitter for Business',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Developers',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Directory',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                    Text(
+                      'Settings',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.copyright,
+                        color: Color.fromARGB(255, 126, 126, 126)),
+                    Text(
+                      '2023 X Corp',
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 126, 126, 126)),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 40,
                 ),
               ],
             ),
