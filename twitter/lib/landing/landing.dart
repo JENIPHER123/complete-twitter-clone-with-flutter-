@@ -26,16 +26,16 @@ class _LandingState extends State<Landing> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(28.0),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 /* twitter logo */
                 const Padding(
-                  padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                  padding: EdgeInsets.fromLTRB(0, 70, 0, 0),
                   child: Image(
                     image: AssetImage('assets/logo/logo1.png'),
                     width: 150,
@@ -62,7 +62,7 @@ class _LandingState extends State<Landing> {
                   ),
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 70,
                 ),
                 const Text(
                   'Join Twitter today.',
@@ -72,7 +72,7 @@ class _LandingState extends State<Landing> {
                   ),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 Container(
                   margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
@@ -89,12 +89,49 @@ class _LandingState extends State<Landing> {
                     ),
                     onPressed: _handleSignIn,
                     child: const Padding(
-                      padding: EdgeInsets.all(28.0),
+                      padding: EdgeInsets.all(18.0),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
-                            'Sign in with Gmail',
-                            style: TextStyle(color: Colors.black38),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage('assets/images/place1.jpg'),
+                                backgroundColor: Color.fromARGB(255, 102, 56, 56),
+                                radius: 20,
+                              ),
+                               Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Sign in As Jenipher',
+                                style: TextStyle(
+                                    color: Color.fromARGB(255, 53, 52, 52)),
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    'jeniperkuki@gmail.com',
+                                    style: TextStyle(color: Colors.black38),
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_down,
+                                    color: Color.fromARGB(218, 27, 27, 27),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                            ],
+                          ),
+                          SizedBox(width: 15),
+                         
+                          CircleAvatar(
+                            backgroundImage:
+                                AssetImage('assets/images/place1.jpg'),
+                            backgroundColor: Color.fromARGB(255, 102, 56, 56),
+                            radius: 20,
                           ),
                         ],
                       ),
