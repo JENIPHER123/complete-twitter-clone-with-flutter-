@@ -28,46 +28,46 @@ class _LandingState extends State<Landing> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(28.0),
+          padding: const EdgeInsets.all(10.0),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 /* twitter logo */
                 const Padding(
-                  padding: EdgeInsets.fromLTRB(0, 70, 0, 0),
+                  padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
                   child: Image(
                     image: AssetImage('assets/logo/logo1.png'),
-                    width: 150,
+                    width: 80,
                   ),
                 ),
                 const SizedBox(
-                  height: 40,
+                  height: 20,
                 ),
                 const Text(
                   'Happening',
                   style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 50,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 3,
                 ),
                 const Text(
                   'now',
                   style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 50,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 const SizedBox(
-                  height: 70,
+                  height: 20,
                 ),
                 const Text(
                   'Join Twitter today.',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -75,7 +75,7 @@ class _LandingState extends State<Landing> {
                   height: 30,
                 ),
                 Container(
-                  margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+                  margin: const EdgeInsets.fromLTRB(0, 0, 5, 0),
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -89,7 +89,7 @@ class _LandingState extends State<Landing> {
                     ),
                     onPressed: _handleSignIn,
                     child: const Padding(
-                      padding: EdgeInsets.all(18.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -100,7 +100,7 @@ class _LandingState extends State<Landing> {
                                     AssetImage('assets/images/place1.jpg'),
                                 backgroundColor:
                                     Color.fromARGB(255, 102, 56, 56),
-                                radius: 20,
+                                radius: 15,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -126,12 +126,12 @@ class _LandingState extends State<Landing> {
                               ),
                             ],
                           ),
-                          SizedBox(width: 15),
+                          
                           CircleAvatar(
                             backgroundImage:
                                 AssetImage('assets/images/place1.jpg'),
                             backgroundColor: Color.fromARGB(255, 102, 56, 56),
-                            radius: 20,
+                            radius: 15,
                           ),
                         ],
                       ),
@@ -142,7 +142,7 @@ class _LandingState extends State<Landing> {
                   height: 20,
                 ),
                 Container(
-                  margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+                  margin: const EdgeInsets.fromLTRB(0, 0, 5, 0),
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -156,17 +156,17 @@ class _LandingState extends State<Landing> {
                     ),
                     onPressed: _handleSignIn,
                     child: const Padding(
-                      padding: EdgeInsets.all(20.0),
+                      padding: EdgeInsets.all(10.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image(
                               image: AssetImage('assets/icons/apple1.png'),
-                              width: 50),
+                              width: 35),
                           Text(
                             'Sign Up with Apple',
                             style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 15,
                                 color: Color.fromARGB(255, 53, 53, 53)),
                           ),
                         ],
@@ -190,7 +190,7 @@ class _LandingState extends State<Landing> {
                   height: 20,
                 ),
                 Container(
-                  margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+                  margin: const EdgeInsets.fromLTRB(0, 0, 5, 0),
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -204,7 +204,7 @@ class _LandingState extends State<Landing> {
                     ),
                     onPressed: _handleSignIn,
                     child: const Padding(
-                      padding: EdgeInsets.all(28.0),
+                      padding: EdgeInsets.all(18.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
@@ -213,7 +213,7 @@ class _LandingState extends State<Landing> {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
-                              fontSize: 20,
+                              fontSize: 15,
                             ),
                           ),
                         ],
@@ -222,20 +222,28 @@ class _LandingState extends State<Landing> {
                   ),
                 ),
                 const Padding(
-                  padding: EdgeInsets.fromLTRB(20, 30, 0, 0),
+                  padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
                   child: Row(
                     children: [
                       Text(
-                        'By signing up, you agree to the ',
+                        'By signing up,you agree to the ',
                         style:
                             TextStyle(color: Color.fromARGB(255, 58, 57, 57)),
                       ),
                       Text(
-                        'Terms of Service ',
+                        'Terms of Service',
                         style: TextStyle(color: Colors.blue),
                       ),
-                      Text(
-                        'and ',
+                     
+                    ],
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                  child: Row(
+                    children: [
+                       Text(
+                        'and',
                         style:
                             TextStyle(color: Color.fromARGB(255, 58, 57, 57)),
                       ),
@@ -243,13 +251,6 @@ class _LandingState extends State<Landing> {
                         'Privacy',
                         style: TextStyle(color: Colors.blue),
                       ),
-                    ],
-                  ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.fromLTRB(20, 5, 0, 0),
-                  child: Row(
-                    children: [
                       Text(
                         'Policy',
                         style: TextStyle(color: Colors.blue),
@@ -274,16 +275,16 @@ class _LandingState extends State<Landing> {
                   child: Text(
                     'Already have an account?',
                     style: TextStyle(
-                      fontSize: 25,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Container(
-                  margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+                  margin: const EdgeInsets.fromLTRB(0, 0, 5, 0),
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -297,14 +298,14 @@ class _LandingState extends State<Landing> {
                     ),
                     onPressed: _handleSignIn,
                     child: const Padding(
-                      padding: EdgeInsets.all(28.0),
+                      padding: EdgeInsets.all(18.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
                             'Sign In',
                             style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 15,
                                 color: Colors.blue,
                                 fontWeight: FontWeight.bold),
                           ),
