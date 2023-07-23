@@ -235,7 +235,9 @@ class _LandingState extends State<Landing> {
                             BorderRadius.circular(48.0), // Adding border radius
                       ),
                     ),
-                    onPressed: _handleSignIn,
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'step1_signup');
+                    },
                     child: const Padding(
                       padding: EdgeInsets.all(18.0),
                       child: Row(
