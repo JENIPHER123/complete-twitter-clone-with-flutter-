@@ -328,7 +328,9 @@ class _LandingState extends State<Landing> {
                             BorderRadius.circular(48.0), // Adding border radius
                       ),
                     ),
-                    onPressed: _handleSignIn,
+                    onPressed: /*  _handleSignIn */ () {
+                      Navigator.pushNamed(context, 'login');
+                    },
                     child: const Padding(
                       padding: EdgeInsets.all(18.0),
                       child: Row(
