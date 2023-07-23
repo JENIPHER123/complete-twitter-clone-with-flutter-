@@ -58,11 +58,14 @@ class _LoginState extends State<Login> {
                 const SizedBox(
                   height: 30,
                 ),
-                const Text(
-                  'Sign In to Twitter.',
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                  child: Text(
+                    'Sign In to Twitter.',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
                 const SizedBox(
@@ -216,12 +219,21 @@ class _LoginState extends State<Login> {
                 const SizedBox(
                   height: 20,
                 ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'Phone, Email, or Username',
+                    ),
+                  ),
+                ),
                 Container(
                   margin: const EdgeInsets.fromLTRB(0, 0, 5, 0),
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Colors.black,
                       side: const BorderSide(
                           color: Color.fromARGB(255, 135, 177, 211)),
                       shape: RoundedRectangleBorder(
@@ -231,12 +243,12 @@ class _LoginState extends State<Login> {
                     ),
                     onPressed: _handleSignIn,
                     child: const Padding(
-                      padding: EdgeInsets.all(18.0),
+                      padding: EdgeInsets.all(15.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
-                            'Create account',
+                            'Next',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
@@ -246,22 +258,6 @@ class _LoginState extends State<Login> {
                         ],
                       ),
                     ),
-                  ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-                  child: Row(
-                    children: [
-                      Text(
-                        'By signing up,you agree to the ',
-                        style:
-                            TextStyle(color: Color.fromARGB(255, 58, 57, 57)),
-                      ),
-                      Text(
-                        'Terms of Service',
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                    ],
                   ),
                 ),
                 const SizedBox(
@@ -284,15 +280,15 @@ class _LoginState extends State<Login> {
                       Navigator.pushNamed(context, 'login');
                     },
                     child: const Padding(
-                      padding: EdgeInsets.all(18.0),
+                      padding: EdgeInsets.all(15.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
-                            'Sign In',
+                            'Forgot Password?',
                             style: TextStyle(
                                 fontSize: 15,
-                                color: Colors.blue,
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold),
                           ),
                         ],
@@ -302,6 +298,27 @@ class _LoginState extends State<Login> {
                 ),
                 const SizedBox(
                   height: 40,
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 3, 0, 0),
+                  child: Row(
+                    children: [
+                      const Text(
+                        "Don't have an account?",
+                        style:
+                            TextStyle(color: Color.fromARGB(255, 58, 57, 57)),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, 'register');
+                        },
+                        child: const Text(
+                          'Sign Up',
+                          style: TextStyle(color: Colors.blue),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
