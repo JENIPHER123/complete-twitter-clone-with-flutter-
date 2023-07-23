@@ -28,7 +28,7 @@ class _LandingState extends State<Landing> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(15.0),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,7 +89,7 @@ class _LandingState extends State<Landing> {
                     ),
                     onPressed: _handleSignIn,
                     child: const Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(10.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -126,7 +126,6 @@ class _LandingState extends State<Landing> {
                               ),
                             ],
                           ),
-                          
                           CircleAvatar(
                             backgroundImage:
                                 AssetImage('assets/images/place1.jpg'),
@@ -138,6 +137,40 @@ class _LandingState extends State<Landing> {
                     ),
                   ),
                 ),
+                /* Container(
+                  margin: const EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 239, 241, 243),
+                      side: const BorderSide(
+                          color: Color.fromARGB(255, 135, 177, 211)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(48.0), // Adding border radius
+                      ),
+                    ),
+                    onPressed: _handleSignIn,
+                    child: const Padding(
+                      padding: EdgeInsets.all(18.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Sign Up with Google',
+                            style: TextStyle(
+                                fontSize: 15,
+                                color: Color.fromARGB(255, 53, 53, 53)),
+                          ),
+                          SizedBox(width: 5),
+                          Image(
+                              image: AssetImage('assets/icons/google1.png'),
+                              width: 23),
+                        ],
+                      ),
+                    ),
+                  ),
+                ), */
                 const SizedBox(
                   height: 20,
                 ),
@@ -234,7 +267,6 @@ class _LandingState extends State<Landing> {
                         'Terms of Service',
                         style: TextStyle(color: Colors.blue),
                       ),
-                     
                     ],
                   ),
                 ),
@@ -242,7 +274,7 @@ class _LandingState extends State<Landing> {
                   padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                   child: Row(
                     children: [
-                       Text(
+                      Text(
                         'and',
                         style:
                             TextStyle(color: Color.fromARGB(255, 58, 57, 57)),
