@@ -97,7 +97,7 @@ class _LandingState extends State<Landing> {
                             children: [
                               CircleAvatar(
                                 backgroundImage:
-                                    AssetImage('assets/images/place1.jpg'),
+                                    AssetImage('assets/images/img5.jpg'),
                                 backgroundColor:
                                     Color.fromARGB(255, 102, 56, 56),
                                 radius: 15,
@@ -128,7 +128,7 @@ class _LandingState extends State<Landing> {
                           ),
                           CircleAvatar(
                             backgroundImage:
-                                AssetImage('assets/images/place1.jpg'),
+                                AssetImage('assets/images/img5.jpg'),
                             backgroundColor: Color.fromARGB(255, 102, 56, 56),
                             radius: 15,
                           ),
