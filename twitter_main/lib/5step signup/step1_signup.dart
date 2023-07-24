@@ -31,24 +31,47 @@ class _Step1SignupState extends State<Step1Signup> {
   // List of items in our dropdown menu
   var months = [
     'Month',
-    'Day',
-    'Year',
-    'Item 4',
-    'Item 5',
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
   ];
   var days = [
-    'Month',
     'Day',
-    'Year',
-    'Item 4',
-    'Item 5',
+    'Mon',
+    'Tue',
+    'Wed',
+    'Thur',
+    'Fri',
+    'Sat',
+    'Sun',
   ];
   var years = [
-    'Years',
-    '20',
     'Year',
-    'Item 4',
-    'Item 5',
+    '2005',
+    '2004',
+    '2003',
+    '2002',
+    '2001',
+    '2000',
+    '1999',
+    '1998',
+    '1997',
+    '1996',
+    '1995',
+    '1994',
+    '1993',
+    '1992',
+    '1991',
+    '1990',
   ];
   @override
   Widget build(BuildContext context) {
@@ -96,7 +119,7 @@ class _Step1SignupState extends State<Step1Signup> {
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 10,
                 ),
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
@@ -146,7 +169,9 @@ class _Step1SignupState extends State<Step1Signup> {
                     ),
                   ],
                 ),
+                const SizedBox(height: 10),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     DropdownButton(
                       // Initial Value
@@ -216,6 +241,7 @@ class _Step1SignupState extends State<Step1Signup> {
                     ),
                   ],
                 ),
+                const SizedBox(height: 20),
                 Container(
                   margin: const EdgeInsets.fromLTRB(0, 0, 5, 0),
                   width: double.infinity,
